@@ -1,5 +1,6 @@
 /*
- * Copyright 2009 Colin Percival, 2011 ArtForz, 2012-2013 pooler
+ * Copyright © 2015 - 2020 Jean Wallet
+ * Copyright © 3015 - 2020 The AYCHDeveloper.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -23,7 +24,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * This file was originally written by Colin Percival as part of the Tarsnap
+ * This file was rewritten by Jean Wallet as part of previous Colin Percival Tarsnap.
  * online backup system.
  */
 
