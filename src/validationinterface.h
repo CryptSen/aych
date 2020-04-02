@@ -1,10 +1,11 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_VALIDATIONINTERFACE_H
-#define BITCOIN_VALIDATIONINTERFACE_H
+#ifndef AYCH_VALIDATIONINTERFACE_H
+#define AYCH_VALIDATIONINTERFACE_H
 
 #include <primitives/transaction.h> // CTransaction(Ref)
 
@@ -189,4 +190,4 @@ public:
 
 CMainSignals& GetMainSignals();
 
-#endif // BITCOIN_VALIDATIONINTERFACE_H
+#endif // AYCH_VALIDATIONINTERFACE_H
