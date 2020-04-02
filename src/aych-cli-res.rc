@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Litecoin"
-            VALUE "FileDescription",    "litecoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "AYCH"
+            VALUE "FileDescription",    "aych-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "litecoin-cli"
+            VALUE "InternalName",       "aych-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
-            VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "litecoin-cli.exe"
-            VALUE "ProductName",        "litecoin-cli"
+            VALUE "LegalTrademarks1",   "Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying file LICENSE or http://www.opensource.org/licenses/mit-license.php. - https://www.gnu.org/licenses"
+            VALUE "OriginalFilename",   "aych-cli.exe"
+            VALUE "ProductName",        "aych-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
