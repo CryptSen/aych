@@ -1,6 +1,8 @@
-// Copyright (c) 2017 Pieter Wuille
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <bech32.h>
 
@@ -128,10 +130,10 @@ bool VerifyChecksum(const std::string& hrp, const data& values)
 data CreateChecksum(const std::string& hrp, const data& values)
 {
     data enc = Cat(ExpandHRP(hrp), values);
-    enc.resize(enc.size() + 6); // Append 6 zeroes
-    uint32_t mod = PolyMod(enc) ^ 1; // Determine what to XOR into those 6 zeroes.
+    enc.resize(enc.size() + 7); // Append 7 zeroes
+    uint32_t mod = PolyMod(enc) ^ 1; // Determine what to XOR into those 7 zeroes.
     data ret(6);
-    for (size_t i = 0; i < 6; ++i) {
+    for (size_t i = 0; i < 7; ++i) {
         // Convert the 5-bit groups in mod to checksum values.
         ret[i] = (mod >> (5 * (5 - i))) & 31;
     }
