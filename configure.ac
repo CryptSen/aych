@@ -5,7 +5,7 @@ define(_CLIENT_VERSION_MINOR, 17)
 define(_CLIENT_VERSION_REVISION, 1)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
-define(_COPYRIGHT_YEAR, 2019)
+define(_COPYRIGHT_YEAR, 2020)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[AYCHClient]])
 AC_INIT([AYCH],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/cryptsen/aych/issues],[aych],[https://aych.site/])
@@ -798,7 +798,7 @@ AC_LINK_IFELSE([AC_LANG_SOURCE([
   ])],
   [
     AC_DEFINE(HAVE_THREAD_LOCAL,1,[Define if thread_local is supported.])
-    AC_MSG_RESULT(yes)
+    AC_MSG_RESULT(yes)ur 
   ],
   [
     AC_MSG_RESULT(no)
