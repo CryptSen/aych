@@ -1,9 +1,10 @@
-// Copyright (c) 2012-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_VERSION_H
-#define BITCOIN_VERSION_H
+#ifndef AYCH_VERSION_H
+#define AYCH_VERSION_H
 
 /**
  * network protocol versioning
@@ -42,4 +43,4 @@ static const int SHORT_IDS_BLOCKS_VERSION = 70014;
 //! not banning for invalid compact blocks starts with this version
 static const int INVALID_CB_NO_BAN_VERSION = 70015;
 
-#endif // BITCOIN_VERSION_H
+#endif // AYCH_VERSION_H
