@@ -1,5 +1,6 @@
 /*
- * Copyright 2009 Colin Percival, 2011 ArtForz, 2012-2013 pooler
+ * Copyright (c) 2015 - 2020 Jean Wallet
+ * Copyright (c) 2015 - 2020 The AYCHDeveloper.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
