@@ -1,9 +1,9 @@
-// Copyright (c) 2014-2016 The Bitcoin Core developers
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CRYPTO_SHA512_H
-#define BITCOIN_CRYPTO_SHA512_H
+#ifndef AYCH_CRYPTO_SHA512_H
+#define AYCH_CRYPTO_SHA512_H
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -25,4 +25,4 @@ public:
     CSHA512& Reset();
 };
 
-#endif // BITCOIN_CRYPTO_SHA512_H
+#endif // AYCH_CRYPTO_SHA512_H
