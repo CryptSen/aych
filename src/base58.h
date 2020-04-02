@@ -1,7 +1,8 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 /**
  * Why base-58 instead of standard base-64 encoding?
@@ -11,8 +12,8 @@
  * - E-mail usually won't line-break if there's no punctuation to break at.
  * - Double-clicking selects the whole string as one word if it's all alphanumeric.
  */
-#ifndef BITCOIN_BASE58_H
-#define BITCOIN_BASE58_H
+#ifndef AYCH_BASE58_H
+#define AYCH_BASE58_H
 
 #include <string>
 #include <vector>
@@ -58,4 +59,4 @@ bool DecodeBase58Check(const char* psz, std::vector<unsigned char>& vchRet);
  */
 bool DecodeBase58Check(const std::string& str, std::vector<unsigned char>& vchRet);
 
-#endif // BITCOIN_BASE58_H
+#endif // AYCH_BASE58_H
