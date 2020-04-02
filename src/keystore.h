@@ -1,10 +1,11 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_KEYSTORE_H
-#define BITCOIN_KEYSTORE_H
+#ifndef AYCH_KEYSTORE_H
+#define AYCH_KEYSTORE_H
 
 #include <key.h>
 #include <pubkey.h>
@@ -80,4 +81,4 @@ CKeyID GetKeyForDestination(const CKeyStore& store, const CTxDestination& dest);
 /** Checks if a CKey is in the given CKeyStore compressed or otherwise*/
 bool HaveKey(const CKeyStore& store, const CKey& key);
 
-#endif // BITCOIN_KEYSTORE_H
+#endif // AYCH_KEYSTORE_H
