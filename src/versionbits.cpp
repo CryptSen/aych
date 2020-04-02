@@ -1,6 +1,7 @@
 // Copyright (c) 2015 - 2020 The AYCHDeveloper
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Distributed under the MIT software license, the AGPL-3.0 see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <versionbits.h>
 #include <consensus/params.h>
@@ -223,7 +224,4 @@ uint32_t VersionBitsMask(const Consensus::Params& params, Consensus::DeploymentP
 
 void VersionBitsCache::Clear()
 {
-    for (unsigned int d = 0; d < Consensus::MAX_VERSION_BITS_DEPLOYMENTS; d++) {
-        caches[d].clear();
-    }
-}
+    for (unsigned int 
