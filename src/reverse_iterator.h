@@ -1,7 +1,11 @@
-// Taken from https://gist.github.com/arvidsson/7231973
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_REVERSE_ITERATOR_H
-#define BITCOIN_REVERSE_ITERATOR_H
+#ifndef AYCH_REVERSE_ITERATOR_H
+#define AYCH_REVERSE_ITERATOR_H
 
 /**
  * Template used for reverse iteration in C++11 range-based for loops.
@@ -35,5 +39,6 @@ reverse_range<T> reverse_iterate(T &x)
 {
     return reverse_range<T>(x);
 }
+Reference see at https://gist.github.com/arvidsson/7231973
 
-#endif // BITCOIN_REVERSE_ITERATOR_H
+#endif // AYCH_REVERSE_ITERATOR_H
