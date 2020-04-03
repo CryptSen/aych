@@ -1,7 +1,8 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <util.h>
 
@@ -81,8 +82,8 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const BITCOIN_CONF_FILENAME = "litecoin.conf";
-const char * const BITCOIN_PID_FILENAME = "litecoin.pid";
+const char * const AYCH_CONF_FILENAME = "aych.conf";
+const char * const AYCH_PID_FILENAME = "aych.pid";
 
 ArgsManager gArgs;
 
@@ -685,7 +686,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "litecoin";
+    const char* pszModule = "aych";
 #endif
     if (pex)
         return strprintf(
@@ -704,13 +705,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Bitcoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Bitcoin
-    // Mac: ~/Library/Application Support/Bitcoin
-    // Unix: ~/.bitcoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\AYCH
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\AYCH
+    // Mac: ~/Library/Application Support/AYCH
+    // Unix: ~/.aych
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Litecoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "AYCH";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -720,10 +721,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Litecoin";
+    return pathRet / "Library/Application Support/AYCH";
 #else
     // Unix
-    return pathRet / ".litecoin";
+    return pathRet / ".aych";
 #endif
 #endif
 }
@@ -891,7 +892,7 @@ bool ArgsManager::ReadConfigFiles(std::string& error, bool ignore_invalid_keys)
         m_config_args.clear();
     }
 
-    const std::string confPath = GetArg("-conf", BITCOIN_CONF_FILENAME);
+    const std::string confPath = GetArg("-conf", AYCH_CONF_FILENAME);
     fs::ifstream stream(GetConfigFile(confPath));
 
     // ok to not have a config file
@@ -976,7 +977,7 @@ std::string ArgsManager::GetChainName() const
 #ifndef WIN32
 fs::path GetPidFile()
 {
-    return AbsPathForConfigVal(fs::path(gArgs.GetArg("-pid", BITCOIN_PID_FILENAME)));
+    return AbsPathForConfigVal(fs::path(gArgs.GetArg("-pid", AYCH_PID_FILENAME)));
 }
 
 void CreatePidFile(const fs::path &path, pid_t pid)
@@ -1221,11 +1222,11 @@ std::string CopyrightHolders(const std::string& strPrefix)
 {
     std::string strCopyrightHolders = strPrefix + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION));
 
-    // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
-    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Bitcoin Core") == std::string::npos) {
+    // Check for untranslated substitution to make sure AYCH Core copyright is not removed by accident
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("AYCH Core") == std::string::npos) {
         std::string strYear = strPrefix;
         strYear.replace(strYear.find("2011"), sizeof("2011")-1, "2009");
-        strCopyrightHolders += "\n" + strYear + "The Bitcoin Core developers";
+        strCopyrightHolders += "\n" + strYear + "The AYCHDeveloper";
     }
     return strCopyrightHolders;
 }
