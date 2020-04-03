@@ -1,6 +1,10 @@
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
+
 // tinyformat.h
-// Copyright (C) 2011, Chris Foster [chris42f (at) gmail (d0t) com]
-//
 // Boost Software License - Version 1.0
 //
 // Permission is hereby granted, free of charge, to any person or organization
@@ -1052,7 +1056,7 @@ TINYFORMAT_FOREACH_ARGNUM(TINYFORMAT_MAKE_FORMAT_FUNCS)
 
 #endif
 
-// Added for Bitcoin Core
+// Added for AYCH Core
 template<typename... Args>
 std::string format(const std::string &fmt, const Args&... args)
 {
