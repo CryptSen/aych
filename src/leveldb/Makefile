@@ -1,8 +1,9 @@
-# Copyright (c) 2011 The LevelDB Authors. All rights reserved.
-# Use of this source code is governed by a BSD-style license that can be
-# found in the LICENSE file. See the AUTHORS file for names of contributors.
-
-#-----------------------------------------------
+# Copyrighted (c) 2015 - 2020 Jean Wallet
+# Copyright (c) 2015 - 2020 The AYCHDeveloper
+# Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+#
 # Uncomment exactly one of the lines labelled (A), (B), and (C) below
 # to switch between compilation modes.
 
