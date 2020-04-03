@@ -1,6 +1,8 @@
-// Copyright (c) 2016-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <bench/bench.h>
 
@@ -17,7 +19,7 @@ namespace block_bench {
 // a block off the wire, but before we can relay the block on to peers using
 // compact block relay.
 
-// Litecoin uses block height 878439, hash 0babe680f55a55d54339511226755f0837261da89a4e78eba4d6436a63026df8
+// AYCH uses block height 878439, hash 0babe680f55a55d54339511226755f0837261da89a4e78eba4d6436a63026df8
 // which contains 3808 transactions.
 
 static void DeserializeBlockTest(benchmark::State& state)
