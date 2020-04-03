@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-# Copyright 2014 BitPay Inc.
-# Copyright 2016-2017 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 Jean Wallet
+# Copyright (c) 2015 - 2020 The AYCHDeveloper
+# Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test framework for litecoin utils.
 
 Runs automatically during `make check`.
