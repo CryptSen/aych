@@ -1,10 +1,11 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_CONSENSUS_PARAMS_H
-#define BITCOIN_CONSENSUS_PARAMS_H
+#ifndef AYCH_CONSENSUS_PARAMS_H
+#define AYCH_CONSENSUS_PARAMS_H
 
 #include <uint256.h>
 #include <limits>
@@ -59,7 +60,7 @@ struct Params {
     /** Block height at which BIP66 becomes active */
     int BIP66Height;
     /**
-     * Minimum blocks including miner confirmation of the total of 2016 blocks in a retargeting period,
+     * Minimum blocks including miner confirmation of the total of 2019 blocks in a retargeting period,
      * (nPowTargetTimespan / nPowTargetSpacing) which is also used for BIP9 deployments.
      * Examples: 1916 for 95%, 1512 for testchains.
      */
@@ -78,4 +79,4 @@ struct Params {
 };
 } // namespace Consensus
 
-#endif // BITCOIN_CONSENSUS_PARAMS_H
+#endif // AYCH_CONSENSUS_PARAMS_H
