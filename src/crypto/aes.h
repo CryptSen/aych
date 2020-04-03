@@ -1,11 +1,13 @@
-// Copyright (c) 2015-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-//
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
+
 // C++ wrapper around ctaes, a constant-time AES implementation
 
-#ifndef BITCOIN_CRYPTO_AES_H
-#define BITCOIN_CRYPTO_AES_H
+#ifndef AYCH_CRYPTO_AES_H
+#define AYCH_CRYPTO_AES_H
 
 extern "C" {
 #include <crypto/ctaes/ctaes.h>
@@ -115,4 +117,4 @@ private:
     unsigned char iv[AES_BLOCKSIZE];
 };
 
-#endif // BITCOIN_CRYPTO_AES_H
+#endif // AYCH_CRYPTO_AES_H
