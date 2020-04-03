@@ -1,9 +1,11 @@
-// Copyright (c) 2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyrighted (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_INTERFACES_WALLET_H
-#define BITCOIN_INTERFACES_WALLET_H
+#ifndef AYCH_INTERFACES_WALLET_H
+#define AYCH_INTERFACES_WALLET_H
 
 #include <amount.h>                    // For CAmount
 #include <pubkey.h>                    // For CKeyID and CScriptID (definitions needed in CTxDestination instantiation)
@@ -373,4 +375,4 @@ std::unique_ptr<Wallet> MakeWallet(const std::shared_ptr<CWallet>& wallet);
 
 } // namespace interfaces
 
-#endif // BITCOIN_INTERFACES_WALLET_H
+#endif // AYCH_INTERFACES_WALLET_H
