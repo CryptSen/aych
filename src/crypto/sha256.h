@@ -1,9 +1,11 @@
-// Copyright (c) 2014-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyrighted (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_CRYPTO_SHA256_H
-#define BITCOIN_CRYPTO_SHA256_H
+#ifndef AYCH_CRYPTO_SHA256_H
+#define AYCH_CRYPTO_SHA256_H
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -38,4 +40,4 @@ std::string SHA256AutoDetect();
  */
 void SHA256D64(unsigned char* output, const unsigned char* input, size_t blocks);
 
-#endif // BITCOIN_CRYPTO_SHA256_H
+#endif // AYCH_CRYPTO_SHA256_H
