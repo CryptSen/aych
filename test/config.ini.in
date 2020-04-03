@@ -1,9 +1,11 @@
-# Copyright (c) 2013-2016 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 Jean Wallet
+# Copyright (c) 2015 - 2020 The AYCHDeveloper
+# Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
 
 # These environment variables are set by the build process and read by
-# test/functional/test_runner.py and test/util/bitcoin-util-test.py
+# test/functional/test_runner.py and test/util/aych-util-test.py
 
 [environment]
 SRCDIR=@abs_top_srcdir@
@@ -14,6 +16,6 @@ RPCAUTH=@abs_top_srcdir@/share/rpcauth/rpcauth.py
 [components]
 # Which components are enabled. These are commented out by `configure` if they were disabled when running config.
 @ENABLE_WALLET_TRUE@ENABLE_WALLET=true
-@BUILD_BITCOIN_UTILS_TRUE@ENABLE_UTILS=true
-@BUILD_BITCOIND_TRUE@ENABLE_BITCOIND=true
+@BUILD_AYCH_UTILS_TRUE@ENABLE_UTILS=true
+@BUILD_AYCHD_TRUE@ENABLE_AYCHD=true
 @ENABLE_ZMQ_TRUE@ENABLE_ZMQ=true
