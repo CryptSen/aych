@@ -1,6 +1,8 @@
-// Copyright (c) 2012-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <bench/bench.h>
 #include <wallet/wallet.h>
@@ -30,7 +32,7 @@ static void addCoin(const CAmount& nValue, const CWallet& wallet, std::vector<Ou
 // the hardest, as you need a wider selection of scenarios, just testing the
 // same one over and over isn't too useful. Generating random isn't useful
 // either for measurements."
-// (https://github.com/bitcoin/bitcoin/issues/7883#issuecomment-224807484)
+// (https://github.com/cryptsen/aych/issues/7883#issuecomment-224807484)
 static void CoinSelection(benchmark::State& state)
 {
     const CWallet wallet("dummy", WalletDatabase::CreateDummy());
