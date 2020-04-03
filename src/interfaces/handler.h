@@ -1,9 +1,11 @@
-// Copyright (c) 2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyrighted (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_INTERFACES_HANDLER_H
-#define BITCOIN_INTERFACES_HANDLER_H
+#ifndef AYCH_INTERFACES_HANDLER_H
+#define AYCH_INTERFACES_HANDLER_H
 
 #include <memory>
 
@@ -32,4 +34,4 @@ std::unique_ptr<Handler> MakeHandler(boost::signals2::connection connection);
 
 } // namespace interfaces
 
-#endif // BITCOIN_INTERFACES_HANDLER_H
+#endif // AYCH_INTERFACES_HANDLER_H
