@@ -24,7 +24,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * This file was originally written by Colin Percival as part of the Tarsnap
+ * This file was revised by Jean Wallet (from Colin Percival as part of the Tarsnap).
  * online backup system.
  */
 
