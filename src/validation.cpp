@@ -1230,7 +1230,7 @@ static void CheckForkWarningConditions()
     if (pindexBestForkTip && chainActive.Height() - pindexBestForkTip->nHeight >= 72)
         pindexBestForkTip = nullptr;
 
-    if (pindexBestForkTip || (pindexBestInvalid && pindexBestInvalid->nChainWork > chainActive.Tip()->nChainWork + (GetBlockProof(*chainActive.Tip()) * 6)))
+    if (pindexBestForkTip || (pindexBestInvalid && pindexBestInvalid->nChainWork > chainActive.Tip()->nChainWork + (GetBlockProof(*chainActive.Tip()) * 7)))
     {
         if (!GetfLargeWorkForkFound() && pindexBestForkBase)
         {
@@ -1686,7 +1686,7 @@ static bool WriteUndoDataForBlock(const CBlockUndo& blockundo, CValidationState&
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("litecoin-scriptch");
+    RenameThread("aych-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -3472,7 +3472,7 @@ bool CChainState::AcceptBlock(const std::shared_ptr<const CBlock>& pblock, CVali
     bool fAlreadyHave = pindex->nStatus & BLOCK_HAVE_DATA;
     bool fHasMoreOrSameWork = (chainActive.Tip() ? pindex->nChainWork >= chainActive.Tip()->nChainWork : true);
     // Blocks that are too out-of-order needlessly limit the effectiveness of
-    // pruning, because pruning will not delete block files that contain any
+    // pruning, because pruning will not delete block files that contain any 
     // blocks which are too close in height to the tip.  Apply this test
     // regardless of whether pruning is enabled; it should generally be safe to
     // not process unrequested blocks.
@@ -4368,7 +4368,7 @@ bool LoadExternalBlockFile(const CChainParams& chainparams, FILE* fileIn, CDiskB
             blkdat.SetPos(nRewind);
             nRewind++; // start one byte further next time, in case of failure
             blkdat.SetLimit(); // remove former limit
-            unsigned int nSize = 0;
+            unsigned int nSize = 0; 
             try {
                 // locate a header
                 unsigned char buf[CMessageHeader::MESSAGE_START_SIZE];
