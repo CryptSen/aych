@@ -1,9 +1,9 @@
-dnl Copyright (c) 2015 Tim Kosse <tim.kosse@filezilla-project.org>
-dnl Copying and distribution of this file, with or without modification, are
-dnl permitted in any medium without royalty provided the copyright notice
-dnl and this notice are preserved. This file is offered as-is, without any
-dnl warranty.
-
+dnl Copyright (c) 2015 - 2020 Jean Wallet
+dnl Copyright (c) 2015 - 2020 The AYCHDeveloper
+dnl Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+dnl file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+dnl file LICENSE or https://www.gnu.org/licenses.
+$
 # Some versions of gcc/libstdc++ require linking with -latomic if
 # using the C++ atomic library.
 #
