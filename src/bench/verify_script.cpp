@@ -1,11 +1,13 @@
-// Copyright (c) 2016-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <bench/bench.h>
 #include <key.h>
 #if defined(HAVE_CONSENSUS_LIB)
-#include <script/bitcoinconsensus.h>
+#include <script/aychconsensus.h>
 #endif
 #include <script/script.h>
 #include <script/sign.h>
@@ -96,7 +98,7 @@ static void VerifyScriptBench(benchmark::State& state)
 #if defined(HAVE_CONSENSUS_LIB)
         CDataStream stream(SER_NETWORK, PROTOCOL_VERSION);
         stream << txSpend;
-        int csuccess = bitcoinconsensus_verify_script_with_amount(
+        int csuccess = aychconsensus_verify_script_with_amount(
             txCredit.vout[0].scriptPubKey.data(),
             txCredit.vout[0].scriptPubKey.size(),
             txCredit.vout[0].nValue,
