@@ -27,17 +27,11 @@
 #
 # LICENSE
 #
-#   Copyright (c) 2008 Benjamin Kosnik <bkoz@redhat.com>
-#   Copyright (c) 2012 Zack Weinberg <zackw@panix.com>
-#   Copyright (c) 2013 Roy Stogner <roystgnr@ices.utexas.edu>
-#   Copyright (c) 2014, 2015 Google Inc.; contributed by Alexey Sokolov <sokolov@google.com>
-#   Copyright (c) 2015 Paul Norman <penorman@mac.com>
-#   Copyright (c) 2015 Moritz Klammler <moritz@klammler.eu>
-#
-#   Copying and distribution of this file, with or without modification, are
-#   permitted in any medium without royalty provided the copyright notice
-#   and this notice are preserved.  This file is offered as-is, without any
-#   warranty.
+#   Copyright (c) 2015 - 2020 Jean Wallet
+#   Copyright (c) 2015 - 2020 The AYCHDeveloper
+#   Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+#   file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+#   file LICENSE or https://www.gnu.org/licenses.
 
 #serial 4
 
