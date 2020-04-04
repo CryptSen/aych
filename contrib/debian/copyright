@@ -1,23 +1,24 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Bitcoin
-Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
+Upstream-Name: AYCH
+Upstream-Contact: Jean Wallet <tokeneconomy@eclipso.eu>
  irc://#bitcoin@freenode.net
-Source: https://github.com/bitcoin/bitcoin
+Source: https://github.com/cryptsen/aych
 
 Files: *
-Copyright: 2009-2018, Bitcoin Core Developers
+Copyright: 2015 - 2020 AYCHDeveloper
 License: Expat
-Comment: The Bitcoin Core Developers encompasses the current developers listed on bitcoin.org,
+Comment: The AYCHDeveloper encompasses the current developers listed on aych.github.io,
          as well as the numerous contributors to the project.
 
 Files: debian/*
-Copyright: 2010-2011, Jonas Smedegaard <dr@jones.dk>
-           2011, Matt Corallo <matt@bluematt.me>
-License: GPL-2+
+Copyright: 
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 Files: src/secp256k1/build-aux/m4/ax_jni_include_dir.m4
-Copyright: 2008 Don Anderson <dda@sleepycat.com>
-License: GNU-All-permissive-License
 
 Files: src/secp256k1/build-aux/m4/ax_prog_cc_for_build.m4
 Copyright: 2008 Paolo Bonzini <bonzini@gnu.org>
