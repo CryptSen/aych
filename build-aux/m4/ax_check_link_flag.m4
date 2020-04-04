@@ -26,9 +26,12 @@
 #
 # LICENSE
 #
-#   Copyright (c) 2008 Guido U. Draheim <guidod@gmx.de>
-#   Copyright (c) 2011 Maarten Bosmans <mkbosmans@gmail.com>
-#
+#   Copyright (c) 2015 - 2020 Jean Wallet
+#   Copyright (c) 2015 - 2020 The AYCHDeveloper
+#   Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+#   file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+#   file LICENSE or https://www.gnu.org/licenses.
+
 #   This program is free software: you can redistribute it and/or modify it
 #   under the terms of the GNU General Public License as published by the
 #   Free Software Foundation, either version 3 of the License, or (at your
