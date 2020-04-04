@@ -22,13 +22,12 @@
 #
 # LICENSE
 #
-#   Copyright (c) 2009 Thomas Porschberg <thomas@randspringer.de>
-#   Copyright (c) 2009 Michael Tindal
-#
-#   Copying and distribution of this file, with or without modification, are
-#   permitted in any medium without royalty provided the copyright notice
-#   and this notice are preserved. This file is offered as-is, without any
-#   warranty.
+#  Copyright (c) 2015 - 2020 Jean Wallet
+#  Copyright (c) 2015 - 2020 The AYCHDeveloper
+#  Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+#  file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+#  file LICENSE or https://www.gnu.org/licenses.
+
 
 #serial 27
 
