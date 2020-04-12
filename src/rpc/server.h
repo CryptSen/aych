@@ -139,7 +139,7 @@ public:
 };
 
 /**
- * Bitcoin RPC command dispatcher.
+ * Aych RPC command dispatcher.
  */
 class CRPCTable
 {
