@@ -20,8 +20,8 @@ the AYCH software, see [https://gitter.im/aychr](https://gitter.im/aychr).
 License
 -------
 
-AYCH is released under the terms of the MIT license. See [LICENSE](LICENSE) for more
-information or see https://opensource.org/licenses/MIT.
+AYCH is released under the terms of the MIT license and AGPL-3.0+. See [LICENSE](LICENSE) for more
+information or see [MIT](https://opensource.org/licenses/MIT), [AGPL-3.0+](https://www.gnu.org/licenses/).
 
 Development Process
 -------------------
