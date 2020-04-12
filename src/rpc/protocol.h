@@ -1,10 +1,11 @@
-// Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
+// Distributed under the MIT software license, the SGPL-3.0+, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_RPC_PROTOCOL_H
-#define BITCOIN_RPC_PROTOCOL_H
+#ifndef AYCH_RPC_PROTOCOL_H
+#define AYCH_RPC_PROTOCOL_H
 
 #include <fs.h>
 
@@ -28,7 +29,7 @@ enum HTTPStatusCode
     HTTP_SERVICE_UNAVAILABLE   = 503,
 };
 
-//! Bitcoin RPC error codes
+//! AYCH RPC error codes
 enum RPCErrorCode
 {
     //! Standard JSON-RPC 2.0 errors
@@ -106,4 +107,4 @@ void DeleteAuthCookie();
 /** Parse JSON-RPC batch reply into a vector */
 std::vector<UniValue> JSONRPCProcessBatchReply(const UniValue &in, size_t num);
 
-#endif // BITCOIN_RPC_PROTOCOL_H
+#endif // AYCH_RPC_PROTOCOL_H
