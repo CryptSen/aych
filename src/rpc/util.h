@@ -1,9 +1,11 @@
-// Copyright (c) 2017-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
+// Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_RPC_UTIL_H
-#define BITCOIN_RPC_UTIL_H
+#ifndef AYCH_RPC_UTIL_H
+#define AYCH_RPC_UTIL_H
 
 #include <pubkey.h>
 #include <script/standard.h>
@@ -24,4 +26,4 @@ CScript CreateMultisigRedeemscript(const int required, const std::vector<CPubKey
 
 UniValue DescribeAddress(const CTxDestination& dest);
 
-#endif // BITCOIN_RPC_UTIL_H
+#endif // AYCH_RPC_UTIL_H
