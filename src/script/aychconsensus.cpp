@@ -123,7 +123,7 @@ int aychonsensus_verify_script(const unsigned char *scriptPubKey, unsigned int s
     return ::verify_script(scriptPubKey, scriptPubKeyLen, am, txTo, txToLen, nIn, flags, err);
 }
 
-unsigned int bitcoinconsensus_version()
+unsigned int aychconsensus_version()
 {
     // Just use the API version for now
     return AYCHCONSENSUS_API_VER;
