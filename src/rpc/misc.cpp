@@ -163,7 +163,7 @@ static UniValue verifymessage(const JSONRPCRequest& request)
             "verifymessage \"address\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
             "\nArguments:\n"
-            "1. \"address\"         (string, required) The litecoin address to use for the signature.\n"
+            "1. \"address\"         (string, required) The aych address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
             "\nResult:\n"
@@ -451,7 +451,7 @@ static UniValue echo(const JSONRPCRequest& request)
             "echo|echojson \"message\" ...\n"
             "\nSimply echo back the input arguments. This command is for testing.\n"
             "\nThe difference between echo and echojson is that echojson has argument conversion enabled in the client-side table in"
-            "litecoin-cli and the GUI. There is no server-side difference."
+            "aych-cli and the GUI. There is no server-side difference."
         );
 
     return request.params;
@@ -465,7 +465,7 @@ static UniValue getinfo_deprecated(const JSONRPCRequest& request)
         "- getblockchaininfo: blocks, difficulty, chain\n"
         "- getnetworkinfo: version, protocolversion, timeoffset, connections, proxy, relayfee, warnings\n"
         "- getwalletinfo: balance, keypoololdest, keypoolsize, paytxfee, unlocked_until, walletversion\n"
-        "\nlitecoin-cli has the option -getinfo to collect and format these in the old format."
+        "\naych-cli has the option -getinfo to collect and format these in the old format."
     );
 }
 
