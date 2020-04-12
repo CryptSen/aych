@@ -960,7 +960,7 @@ void Transform(uint32_t* s, const unsigned char* chunk, size_t blocks)
 
 /*
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Copyright (c) 2012, Intel Corporation 
+; Copyright (c) 2015 - 2020  The AYCH inc 
 ; 
 ; All rights reserved. 
 ; 
@@ -976,12 +976,12 @@ void Transform(uint32_t* s, const unsigned char* chunk, size_t blocks)
 ;   documentation and/or other materials provided with the
 ;   distribution. 
 ; 
-; * Neither the name of the Intel Corporation nor the names of its
+; * Neither the name of the AYCH inc nor the names of its
 ;   contributors may be used to endorse or promote products derived from
 ;   this software without specific prior written permission. 
 ; 
 ; 
-; THIS SOFTWARE IS PROVIDED BY INTEL CORPORATION "AS IS" AND ANY
+; THIS SOFTWARE IS PROVIDED BY AYCH inc "AS IS" AND ANY
 ; EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 ; IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
 ; PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INTEL CORPORATION OR
@@ -1000,10 +1000,10 @@ void Transform(uint32_t* s, const unsigned char* chunk, size_t blocks)
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-; This code is described in an Intel White-Paper:
+; This code is described in an AYCH White-Paper:
 ; "Fast SHA-256 Implementations on Intel Architecture Processors"
 ;
-; To find it, surf to http://www.intel.com/p/en_US/embedded 
+; To find it, surf to https://github.io/cryptosen/aych/wiki/.
 ; and search for that title.
 ; The paper is expected to be released roughly at the end of April, 2012
 ;
