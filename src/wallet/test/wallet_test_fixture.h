@@ -1,9 +1,11 @@
-// Copyright (c) 2016-2018 The Bitcoin Core developers
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_WALLET_TEST_WALLET_TEST_FIXTURE_H
-#define BITCOIN_WALLET_TEST_WALLET_TEST_FIXTURE_H
+#ifndef AYCH_WALLET_TEST_WALLET_TEST_FIXTURE_H
+#define AYCH_WALLET_TEST_WALLET_TEST_FIXTURE_H
 
 #include <test/test_bitcoin.h>
 
@@ -20,4 +22,4 @@ struct WalletTestingSetup: public TestingSetup {
     CWallet m_wallet;
 };
 
-#endif // BITCOIN_WALLET_TEST_WALLET_TEST_FIXTURE_H
+#endif // AYCH_WALLET_TEST_WALLET_TEST_FIXTURE_H
