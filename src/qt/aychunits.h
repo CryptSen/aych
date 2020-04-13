@@ -4,8 +4,8 @@
 // file LICENSE or http://www.opensource.org/licenses/mit-license.php.
 // file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef AYCH_QT_BITCOINUNITS_H
-#define AYCH_QT_BITCOINUNITS_H
+#ifndef AYCH_QT_AYCHUNITS_H
+#define AYCH_QT_AYCHUNITS_H
 
 #include <amount.h>
 
