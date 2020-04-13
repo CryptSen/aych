@@ -4,8 +4,8 @@
 // file LICENSE or http://www.opensource.org/licenses/mit-license.php.
 // file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef AYCH_QT_BITCOINGUI_H
-#define AYCH_QT_BITCOINGUI_H
+#ifndef AYCH_QT_AYCHGUI_H
+#define AYCH_QT_AYCHGUI_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/aych-config.h>
