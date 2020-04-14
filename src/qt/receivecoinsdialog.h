@@ -1,9 +1,11 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_QT_RECEIVECOINSDIALOG_H
-#define BITCOIN_QT_RECEIVECOINSDIALOG_H
+#ifndef AYCH_QT_RECEIVECOINSDIALOG_H
+#define AYCH_QT_RECEIVECOINSDIALOG_H
 
 #include <qt/guiutil.h>
 
@@ -26,7 +28,7 @@ QT_BEGIN_NAMESPACE
 class QModelIndex;
 QT_END_NAMESPACE
 
-/** Dialog for requesting payment of bitcoins */
+/** Dialog for requesting payment of aychs */
 class ReceiveCoinsDialog : public QDialog
 {
     Q_OBJECT
@@ -77,4 +79,4 @@ private Q_SLOTS:
     void copyAmount();
 };
 
-#endif // BITCOIN_QT_RECEIVECOINSDIALOG_H
+#endif // AYCH_QT_RECEIVECOINSDIALOG_H
