@@ -1,11 +1,13 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <qt/transactionview.h>
 
 #include <qt/addresstablemodel.h>
-#include <qt/bitcoinunits.h>
+#include <qt/aychunits.h>
 #include <qt/csvmodelwriter.h>
 #include <qt/editaddressdialog.h>
 #include <qt/optionsmodel.h>
@@ -332,7 +334,7 @@ void TransactionView::changedAmount()
     if(!transactionProxyModel)
         return;
     CAmount amount_parsed = 0;
-    if (BitcoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), amountWidget->text(), &amount_parsed)) {
+    if (AychUnits::parse(model->getOptionsModel()->getDisplayUnit(), amountWidget->text(), &amount_parsed)) {
         transactionProxyModel->setMinAmount(amount_parsed);
     }
     else
