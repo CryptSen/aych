@@ -1,12 +1,14 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_QT_NOTIFICATOR_H
-#define BITCOIN_QT_NOTIFICATOR_H
+#ifndef AYCH_QT_NOTIFICATOR_H
+#define AYCH_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/aych-config.h>
 #endif
 
 #include <QIcon>
@@ -74,4 +76,4 @@ private:
 #endif
 };
 
-#endif // BITCOIN_QT_NOTIFICATOR_H
+#endif // AYCH_QT_NOTIFICATOR_H
