@@ -5,7 +5,7 @@
 // file LICENSE or https://www.gnu.org/licenses.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/aych-config.h>
 #endif
 
 #include <fs.h>
