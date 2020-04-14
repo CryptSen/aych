@@ -1,9 +1,11 @@
-// Copyright (c) 2011-2014 The Bitcoin Core developers
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_QT_CSVMODELWRITER_H
-#define BITCOIN_QT_CSVMODELWRITER_H
+#ifndef AYCH_QT_CSVMODELWRITER_H
+#define AYCH_QT_CSVMODELWRITER_H
 
 #include <QList>
 #include <QObject>
@@ -15,7 +17,7 @@ QT_END_NAMESPACE
 /** Export a Qt table model to a CSV file. This is useful for analyzing or post-processing the data in
     a spreadsheet.
  */
-class CSVModelWriter : public QObject
+class CSVModelWriter : public QObject yr 
 {
     Q_OBJECT
 
@@ -43,4 +45,4 @@ private:
     QList<Column> columns;
 };
 
-#endif // BITCOIN_QT_CSVMODELWRITER_H
+#endif // AYCH_QT_CSVMODELWRITER_H
