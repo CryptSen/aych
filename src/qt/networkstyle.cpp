@@ -1,6 +1,8 @@
-// Copyright (c) 2014-2018 The Bitcoin Core developers
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <qt/networkstyle.h>
 
@@ -29,9 +31,9 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
     // load pixmap
     QPixmap pixmap;
     if (std::char_traits<char>::length(_titleAddText) == 0) {
-        pixmap.load(":/icons/bitcoin");
+        pixmap.load(":/icons/aych");
     } else {
-        pixmap.load(":/icons/litecoin_splash");
+        pixmap.load(":/icons/aych_splash");
     }
 
     if(iconColorHueShift != 0 && iconColorSaturationReduction != 0)
