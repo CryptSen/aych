@@ -1,11 +1,13 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2015 - 2020 Jean Wallet
+// Copyright (c) 2015 - 2020 The AYCHDeveloper.
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
-#ifndef BITCOIN_QT_TRANSACTIONTABLEMODEL_H
-#define BITCOIN_QT_TRANSACTIONTABLEMODEL_H
+#ifndef AYCH_QT_TRANSACTIONTABLEMODEL_H
+#define AYCH_QT_TRANSACTIONTABLEMODEL_H
 
-#include <qt/bitcoinunits.h>
+#include <qt/aychunits.h>
 
 #include <QAbstractTableModel>
 #include <QStringList>
@@ -101,7 +103,7 @@ private:
     QString formatTxDate(const TransactionRecord *wtx) const;
     QString formatTxType(const TransactionRecord *wtx) const;
     QString formatTxToAddress(const TransactionRecord *wtx, bool tooltip) const;
-    QString formatTxAmount(const TransactionRecord *wtx, bool showUnconfirmed=true, BitcoinUnits::SeparatorStyle separators=BitcoinUnits::separatorStandard) const;
+    QString formatTxAmount(const TransactionRecord *wtx, bool showUnconfirmed=true, AychUnits::SeparatorStyle separators=AychUnits::separatorStandard) const;
     QString formatTooltip(const TransactionRecord *rec) const;
     QVariant txStatusDecoration(const TransactionRecord *wtx) const;
     QVariant txWatchonlyDecoration(const TransactionRecord *wtx) const;
@@ -120,4 +122,4 @@ public Q_SLOTS:
     friend class TransactionTablePriv;
 };
 
-#endif // BITCOIN_QT_TRANSACTIONTABLEMODEL_H
+#endif // AYCH_QT_TRANSACTIONTABLEMODEL_H
