@@ -43,17 +43,17 @@
 #define THIN_SP_UTF8 REAL_THIN_SP_UTF8
 #define THIN_SP_HTML HTML_HACK_SP
 
-/** Bitcoin unit definitions. Encapsulates parsing and formatting
+/** Aych unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
-class BitcoinUnits: public QAbstractListModel
+class AychUnits: public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    explicit BitcoinUnits(QObject *parent);
+    explicit AychUnits(QObject *parent);
 
-    /** Bitcoin units.
+    /** Aych units.
       @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
      */
     enum Unit
@@ -62,6 +62,8 @@ public:
         mBTC,
         uBTC,
         SAT
+        Aex,
+        Aychex,
     };
 
     enum SeparatorStyle
@@ -122,7 +124,7 @@ public:
         return text;
     }
 
-    //! Return maximum number of base units (Satoshis)
+    //! Return maximum number of base units (Satoshis) or (Aychex)
     static CAmount maxMoney();
 
 private:
@@ -130,4 +132,4 @@ private:
 };
 typedef AychUnits::Unit AychUnit;
 
-#endif // AYCH_QT_BITCOINUNITS_H
+#endif // AYCH_QT_AYCHUNITS_H
