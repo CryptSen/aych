@@ -3146,10 +3146,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>aych-core</name>
     <message>
-        <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
-        <translation>依據 MIT 軟體授權條款散布，詳情請見附帶的 %s 檔案或是 %s</translation>
+        <source>Distributed under the MIT software license, the AGPL-3.0+, see the accompanying file %s or %s</source>
+        <translation>依據 MIT 軟體授權條款散布，AGPL-3.0+, 詳情請見附帶的 %s 檔案或是 %s</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
@@ -3176,8 +3176,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>無法啟動 HTTP 伺服器。詳情請看除錯紀錄。</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>Aych Core</source>
+        <translation>Aych Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
