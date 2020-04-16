@@ -163,7 +163,7 @@
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะส่ง litecoin</translation>
+        <translation>&amp;ที่เก็บเงิน ที่จะส่ง aych</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
