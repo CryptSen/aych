@@ -67,11 +67,11 @@
     </message>
     <message>
         <source>These are your Aych addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ово су ваше Биткоин адресе за слање уплата. Увек добро проверите износ и адресу на коју шаљете пре него што пошаљете уплату.</translation>
+        <translation>Ово су ваше Aych адресе за слање уплата. Увек добро проверите износ и адресу на коју шаљете пре него што пошаљете уплату.</translation>
     </message>
     <message>
         <source>These are your Aych addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ово су ваше Биткоин адресе за примање уплате. Препоручује се да се за сваку трансакцију користи нова адреса.</translation>
+        <translation>Ово су ваше Aych адресе за примање уплате. Препоручује се да се за сваку трансакцију користи нова адреса.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -189,7 +189,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your aychs from being stolen by malware infecting your computer.</source>
-        <translation>%1 ће се сада затворити како би се завршио процес шифрирања.  Запамтите да шифрирањем свог новчаника не можете у потпуности заштити своје биткоине од крађе од стране злоћудних програма и компјутерских инфекција.</translation>
+        <translation>%1 ће се сада затворити како би се завршио процес шифрирања.  Запамтите да шифрирањем свог новчаника не можете у потпуности заштити своје Aych од крађе од стране злоћудних програма и компјутерских инфекција.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -359,7 +359,7 @@
     </message>
     <message>
         <source>Send coins to an Aych address</source>
-        <translation>Пошаљите новац на Биткоин адресу</translation>
+        <translation>Пошаљите новац на Aych адресу</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -826,8 +826,8 @@
         <translation>Користите прилагођени директоријум података:</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Биткоин</translation>
+        <source>Aych</source>
+        <translation>Aych</translation>
     </message>
     <message>
         <source>Error</source>
