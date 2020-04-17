@@ -1677,8 +1677,8 @@
         <translation>Payer seulement les frais obligatoire de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Litecoin address</source>
-        <translation>Attention: Adresse Litecoin Invalide</translation>
+        <source>Warning: Invalid Aych address</source>
+        <translation>Attention: Adresse Aych Invalide</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2234,8 +2234,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>Aych Core</source>
+        <translation>Aych Core</translation>
     </message>
     <message>
         <source>Importing...</source>
