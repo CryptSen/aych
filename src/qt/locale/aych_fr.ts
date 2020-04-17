@@ -446,8 +446,8 @@
         <translation>Afficher la liste d’adresses de réception et d’étiquettes utilisées</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>Ouvrir une URI litecoin: ou une demande de paiement</translation>
+        <source>Open an Aych: URI or payment request</source>
+        <translation>Ouvrir une URI Aych: ou une demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
