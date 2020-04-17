@@ -3505,7 +3505,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>手数料ポリシーに対してトランザクションが大きすぎます</translation>
     </message>
     <message>
-        <source>Transaction too large</source>
+        <source>Transaction too large!</source>
         <translation>取引が大き過ぎます</translation>
     </message>
     <message>
