@@ -240,7 +240,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AychGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
