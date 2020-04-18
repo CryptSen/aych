@@ -68,7 +68,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AychGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sincronizando con la red...</translation>
@@ -130,8 +130,8 @@
         <translation>Cambie la clave utilizada para el cifrado del monedero</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Aych</source>
+        <translation>Aych</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -256,8 +256,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Aych</source>
+        <translation>Aych</translation>
     </message>
     <message>
         <source>Error</source>
@@ -473,7 +473,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>Aych-core</name>
     <message>
         <source>Information</source>
         <translation>Información</translation>
