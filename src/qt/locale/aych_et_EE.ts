@@ -104,7 +104,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AychGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Võrguga sünkroniseerimine...</translation>
@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Aych</source>
+        <translation>Aych</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -265,8 +265,8 @@
         <translation>Tere tulemast</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Aych</source>
+        <translation>Aych</translation>
     </message>
     <message>
         <source>Error</source>
@@ -329,7 +329,7 @@
         <translation>Hiljutised transaktsioonid</translation>
     </message>
     </context>
-<context>
+<context> 
     <name>PaymentServer</name>
     </context>
 <context>
