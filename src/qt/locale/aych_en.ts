@@ -85,12 +85,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Aych addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Aych addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AYCHS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -237,7 +237,7 @@
     </message>
     <message>
         <location line="-56"/>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Aychs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,9 +307,9 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AychGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+307"/>
+        <location filename="../Aychgui.cpp" line="+307"/>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
     </message>
@@ -455,8 +455,8 @@
     </message>
     <message>
         <location line="-880"/>
-        <source>Send coins to a Litecoin address</source>
-        <translation>Send coins to a Litecoin address</translation>
+        <source>Send coins to an Aych address</source>
+        <translation>Send coins to an Aych address</translation>
     </message>
     <message>
         <location line="+67"/>
@@ -485,8 +485,8 @@
     </message>
     <message>
         <location line="+570"/>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Aych</source>
+        <translation>Aych</translation>
     </message>
     <message>
         <location line="-792"/>
@@ -520,13 +520,13 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
-        <translation>Sign messages with your Litecoin addresses to prove you own them</translation>
+        <source>Sign messages with your Aych addresses to prove you own them</source>
+        <translation>Sign messages with your Aych addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Litecoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Aych addresses</source>
+        <translation>Verify messages to ensure they were signed with specified Aych addresses</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -550,7 +550,7 @@
     </message>
     <message>
         <location line="-158"/>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <source>Request payments (generates QR codes and Aych: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -565,7 +565,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a litecoin: URI or payment request</source>
+        <source>Open an Aych: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -577,8 +577,8 @@
         <location line="+410"/>
         <source>%n active connection(s) to Litecoin network</source>
         <translation>
-            <numerusform>%n active connection to Litecoin network</numerusform>
-            <numerusform>%n active connections to Litecoin network</numerusform>
+            <numerusform>%n active connection to Aych network</numerusform>
+            <numerusform>%n active connections to Aych network</numerusform>
         </translation>
     </message>
     <message>
@@ -636,7 +636,7 @@
     </message>
     <message>
         <location line="-494"/>
-        <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Aych command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -960,7 +960,7 @@
     </message>
     <message>
         <location line="+75"/>
-        <source>The entered address &quot;%1&quot; is not a valid Litecoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Aych address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1095,7 +1095,7 @@
     </message>
     <message>
         <location line="+8"/>
-        <source>%1 will download and store a copy of the Litecoin block chain.</source>
+        <source>%1 will download and store a copy of the Aych block chain.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1139,12 +1139,12 @@
     </message>
     <message>
         <location line="+119"/>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Aych network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend Aychs that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1382,8 +1382,8 @@
     </message>
     <message>
         <location line="+30"/>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Aych client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Aych client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1402,7 +1402,7 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Aych network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1450,7 +1450,7 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the Aych network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1585,8 +1585,8 @@
     <message>
         <location line="+62"/>
         <location line="+386"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Aych network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Aych network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-139"/>
@@ -1683,7 +1683,7 @@
     </message>
     <message>
         <location line="-398"/>
-        <source>Cannot start litecoin: click-to-pay handler</source>
+        <source>Cannot start Aych: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1696,7 +1696,7 @@
     </message>
     <message>
         <location line="-41"/>
-        <source>&apos;litecoin://&apos; is not a valid URI. Use &apos;litecoin:&apos; instead.</source>
+        <source>&apos;Aych://&apos; is not a valid URI. Use &apos;Aych:&apos; instead.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1711,7 +1711,7 @@
     </message>
     <message>
         <location line="+8"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Aych address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1957,7 +1957,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+192"/>
+        <location filename="../Aych.cpp" line="+192"/>
         <source>%1 didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1970,7 +1970,7 @@
 <context>
     <name>QObject::QObject</name>
     <message>
-        <location filename="../bitcoin.cpp" line="-117"/>
+        <location filename="../Aych.cpp" line="-117"/>
         <source>Error parsing command line arguments: %1.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2459,7 +2459,7 @@
     <message>
         <location line="-3"/>
         <location line="+46"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Aych network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2762,7 +2762,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5"/>7
         <source>per kilobyte</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2774,7 +2774,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     <message>
         <location line="+80"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Aych transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3005,7 +3005,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+101"/>
-        <source>Warning: Invalid Litecoin address</source>
+        <source>Warning: Invalid Auch address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3060,7 +3060,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+39"/>
-        <source>The Litecoin address to send the payment to</source>
+        <source>The Aych address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3087,7 +3087,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="-1028"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less Aychs than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3122,7 +3122,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+54"/>
-        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
+        <source>A message that was attached to the Aych: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Aych network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3179,12 +3179,12 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive Aychs sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The Litecoin address to sign the message with</source>
+        <source>The Aych address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3226,8 +3226,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Litecoin address</source>
-        <translation>Sign the message to prove you own this Litecoin address</translation>
+        <source>Sign the message to prove you own this Aych address</source>
+        <translation>Sign the message to prove you own this Aych address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3262,8 +3262,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified Litecoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Aych address</source>
+        <translation>Verify the message to ensure it was signed with the specified Aych address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -4061,7 +4061,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+29"/>
+        <location filename="../Aychstrings.cpp" line="+29"/>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4072,7 +4072,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+2"/>
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole Aych again in case of pruned node)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4098,7 +4098,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     <message>
         <location line="-184"/>
         <source>Litecoin Core</source>
-        <translation type="unfinished">Litecoin Core</translation>
+        <translation type="unfinished">Aych Core</translation>
     </message>
     <message>
         <location line="+1"/>
