@@ -1066,8 +1066,8 @@
         <translation>&amp;Spend unconfirmed change</translation>
     </message>
     <message>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Aych client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Aych client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
