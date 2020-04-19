@@ -334,7 +334,7 @@
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
+        <source>Send coins to an Aych address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -347,7 +347,7 @@
     </message>
     <message>
         <source>&amp;Debug window</source>
-        <translation>&amp;Прозорец за отстраняване на грешки</translation>
+        <translation>&amp;Прозорец за отстраняване на гре9шки</translation>
     </message>
     <message>
         <source>Open debugging and diagnostic console</source>
@@ -422,8 +422,8 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a aych: URI or payment request</source>
-        <translation>Отворете aych: URI  или заявка за плащане</translation>
+        <source>Open an Aych: URI or payment request</source>
+        <translation>Отворете Aych: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
