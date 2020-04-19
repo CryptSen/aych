@@ -232,7 +232,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AychGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Teken &amp;boodskap...</translation>
@@ -1144,7 +1144,7 @@
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter a Aych address (e.g. %1)</source>
+        <source>Enter an Aych address (e.g. %1)</source>
         <translation>Voer in 'n Aych adres (bv. %1)</translation>
     </message>
     <message>
@@ -1876,7 +1876,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>Aych-core</name>
     <message>
         <source>Aych Core</source>
         <translation>Aych Kern</translation>
