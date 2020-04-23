@@ -1,6 +1,7 @@
-// Copyright (c) 2016-2018 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 #include <qt/test/rpcnestedtests.h>
 
@@ -12,7 +13,7 @@
 #include <rpc/register.h>
 #include <rpc/server.h>
 #include <qt/rpcconsole.h>
-#include <test/test_bitcoin.h>
+#include <test/test_aych.h>
 #include <univalue.h>
 #include <util.h>
 
