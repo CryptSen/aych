@@ -59,8 +59,8 @@ uint256 SendCoins(CWallet& wallet, SendCoinsDialog& sendCoinsDialog, const CTxDe
     QVBoxLayout* entries = sendCoinsDialog.findChild<QVBoxLayout*>("entries");
     SendCoinsEntry* entry = qobject_cast<SendCoinsEntry*>(entries->itemAt(0)->widget());
     entry->findChild<QValidatedLineEdit*>("payTo")->setText(QString::fromStdString(EncodeDestination(address)));
-    entry->findChild<BitcoinAmountField*>("payAmount")->setValue(amount);
-    /* Litecon: Disabled RBF UI
+    entry->findChild<AychAmountField*>("payAmount")->setValue(amount);
+    /* Aych: Disabled RBF UI
     sendCoinsDialog.findChild<QFrame*>("frameFee")
         ->findChild<QFrame*>("frameFeeSelection")
         ->findChild<QCheckBox*>("optInRBF")
@@ -90,7 +90,7 @@ QModelIndex FindTx(const QAbstractItemModel& model, const uint256& txid)
 }
 
 //! Invoke bumpfee on txid and check results.
-/* Litecoin: Disable RBF
+/* Aych: Disable RBF
 void BumpFee(TransactionView& view, const uint256& txid, bool expectDisabled, std::string expectError, bool cancel)
 {
     QTableView* table = view.findChild<QTableView*>("transactionView");
@@ -188,7 +188,7 @@ void TestGUI()
     QString balanceText = balanceLabel->text();
     int unit = walletModel.getOptionsModel()->getDisplayUnit();
     CAmount balance = walletModel.wallet().getBalance();
-    QString balanceComparison = BitcoinUnits::formatWithUnit(unit, balance, false, BitcoinUnits::separatorAlways);
+    QString balanceComparison = AychUnits::formatWithUnit(unit, balance, false, AychUnits::separatorAlways);
     QCOMPARE(balanceText, balanceComparison);
 
     // Check Request Payment button
@@ -201,7 +201,7 @@ void TestGUI()
     labelInput->setText("TEST_LABEL_1");
 
     // Amount input
-    AychAmountField* amountInput = receiveCoinsDialog.findChild<BitcoinAmountField*>("reqAmount");
+    AychAmountField* amountInput = receiveCoinsDialog.findChild<AychAmountField*>("reqAmount");
     amountInput->setValue(1);
 
     // Message input
