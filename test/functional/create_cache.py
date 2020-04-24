@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Create a blockchain cache.
 
 Creating a cache of the blockchain speeds up test execution when running
@@ -9,9 +11,9 @@ multiple functional tests. This helper script is executed by test_runner when mu
 tests are being run in parallel.
 """
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 
-class CreateCache(BitcoinTestFramework):
+class CreateCache(AychTestFramework):
     # Test network and test nodes are not required:
 
     def set_test_params(self):
