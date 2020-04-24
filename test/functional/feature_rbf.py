@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test the RBF code."""
 
 from decimal import Decimal
 
 from test_framework.messages import COIN, COutPoint, CTransaction, CTxIn, CTxOut
 from test_framework.script import CScript, OP_DROP
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error, bytes_to_hex_str, satoshi_round
 
 MAX_REPLACEMENT_LIMIT = 100
@@ -62,7 +64,7 @@ def make_utxo(node, amount, confirmed=True, scriptPubKey=CScript([1])):
     return COutPoint(int(txid, 16), 0)
 
 
-class ReplaceByFeeTest(BitcoinTestFramework):
+class ReplaceByFeeTest(AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.extra_args = [
