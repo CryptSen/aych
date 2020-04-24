@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test the SegWit changeover logic."""
 
 from decimal import Decimal
@@ -18,7 +20,7 @@ from test_framework.address import (
 from test_framework.blocktools import witness_script, send_to_witness
 from test_framework.messages import COIN, COutPoint, CTransaction, CTxIn, CTxOut, FromHex, sha256, ToHex
 from test_framework.script import CScript, OP_HASH160, OP_CHECKSIG, OP_0, hash160, OP_EQUAL, OP_DUP, OP_EQUALVERIFY, OP_1, OP_2, OP_CHECKMULTISIG, OP_TRUE, OP_DROP
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error, bytes_to_hex_str, connect_nodes, hex_str_to_bytes, sync_blocks, try_rpc
 
 from io import BytesIO
@@ -41,7 +43,7 @@ def find_spendable_utxo(node, min_value):
 
     raise AssertionError("Unspent output equal or higher than %s not found" % min_value)
 
-class SegWitTest(BitcoinTestFramework):
+class SegWitTest(AychTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 3
@@ -619,7 +621,7 @@ class SegWitTest(BitcoinTestFramework):
 
     def p2pkh_address_to_script(self,v):
         pubkey = hex_str_to_bytes(v['pubkey'])
-        p2wpkh = CScript([OP_0, hash160(pubkey)])
+        p2wpkh = CScript([OP_0, hash160(pubkey)]) 
         p2sh_p2wpkh = CScript([OP_HASH160, hash160(p2wpkh), OP_EQUAL])
         p2pk = CScript([pubkey, OP_CHECKSIG])
         p2pkh = CScript(hex_str_to_bytes(v['scriptPubKey']))
