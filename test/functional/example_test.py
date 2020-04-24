@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """An example functional test
 
 The module-level docstring should include a high-level description of
@@ -64,12 +66,12 @@ def custom_function():
 
     If this function is more generally useful for other tests, consider
     moving it to a module in test_framework."""
-    # self.log.info("running custom_function")  # Oops! Can't run self.log outside the BitcoinTestFramework
+    # self.log.info("running custom_function")  # Oops! Can't run self.log outside the AychTestFramework
     pass
 
 
-class ExampleTest(BitcoinTestFramework):
-    # Each functional test is a subclass of the BitcoinTestFramework class.
+class ExampleTest(AychTestFramework):
+    # Each functional test is a subclass of the AychTestFramework class.
 
     # Override the set_test_params(), skip_test_if_missing_module(), add_options(), setup_chain(), setup_network()
     # and setup_nodes() methods to customize the test setup as required.
@@ -127,7 +129,7 @@ class ExampleTest(BitcoinTestFramework):
 
         Define it in a method here because you're going to use it repeatedly.
         If you think it's useful in general, consider moving it to the base
-        BitcoinTestFramework class so other tests can use it."""
+        AychTestFramework class so other tests can use it."""
 
         self.log.info("Running custom_method")
 
