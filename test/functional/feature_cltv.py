@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test BIP65 (CHECKLOCKTIMEVERIFY).
 
 Test that the CHECKLOCKTIMEVERIFY soft-fork activates at (regtest) block height
@@ -12,7 +14,7 @@ from test_framework.blocktools import create_coinbase, create_block, create_tran
 from test_framework.messages import CTransaction, msg_block, ToHex
 from test_framework.mininode import mininode_lock, P2PInterface
 from test_framework.script import CScript, OP_1NEGATE, OP_CHECKLOCKTIMEVERIFY, OP_DROP, CScriptNum
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import assert_equal, bytes_to_hex_str, hex_str_to_bytes, wait_until
 
 from io import BytesIO
@@ -52,7 +54,7 @@ def cltv_validate(node, tx, height):
                                   list(CScript(new_tx.vin[0].scriptSig)))
     return new_tx
 
-class BIP65Test(BitcoinTestFramework):
+class BIP65Test(AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.extra_args = [['-whitelist=127.0.0.1']]
