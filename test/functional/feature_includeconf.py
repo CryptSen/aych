@@ -34,7 +34,7 @@ class IncludeConfTest(AychTestFramework):
         # - tmpdir/node0/relative2.conf
         with open(os.path.join(self.options.tmpdir, "node0", "relative2.conf"), "w", encoding="utf8") as f:
             f.write("uacomment=relative2\n")
-        with open(os.path.join(self.options.tmpdir, "node0", "litecoin.conf"), "a", encoding='utf8') as f:
+        with open(os.path.join(self.options.tmpdir, "node0", "aych.conf"), "a", encoding='utf8') as f:
             f.write("uacomment=main\nincludeconf=relative.conf\n")
 
     def run_test(self):
