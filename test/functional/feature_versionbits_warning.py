@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test version bits warning system.
 
 Generate chains with block versions that appear to be signalling unknown
@@ -13,7 +15,7 @@ import re
 from test_framework.blocktools import create_block, create_coinbase
 from test_framework.messages import msg_block
 from test_framework.mininode import P2PInterface, mininode_lock
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import wait_until
 
 VB_PERIOD = 144           # versionbits period length for regtest
@@ -26,7 +28,7 @@ WARN_UNKNOWN_RULES_MINED = "Unknown block versions being mined! It's possible un
 WARN_UNKNOWN_RULES_ACTIVE = "unknown new rules activated (versionbit {})".format(VB_UNKNOWN_BIT)
 VB_PATTERN = re.compile("Warning: unknown new rules activated.*versionbit")
 
-class VersionBitsWarningTest(BitcoinTestFramework):
+class VersionBitsWarningTest(AychTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
