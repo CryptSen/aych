@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test node responses to invalid blocks.
 
 In this test we connect to one node over p2p, and test block requests:
@@ -15,10 +17,10 @@ import copy
 from test_framework.blocktools import create_block, create_coinbase, create_tx_with_script
 from test_framework.messages import COIN
 from test_framework.mininode import P2PDataStore
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import assert_equal
 
-class InvalidBlockRequestTest(BitcoinTestFramework):
+class InvalidBlockRequestTest(AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True
