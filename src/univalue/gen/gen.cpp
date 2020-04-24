@@ -1,6 +1,7 @@
-// Copyright 2014 BitPay Inc.
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2015 - 2020 The AYCHDeveloper
+// Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+// file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+// file LICENSE or https://www.gnu.org/licenses.
 
 //
 // To re-create univalue_escapes.h:
@@ -41,8 +42,8 @@ static void initJsonEscape()
 static void outputEscape()
 {
 	printf(	"// Automatically generated file. Do not modify.\n"
-		"#ifndef BITCOIN_UNIVALUE_UNIVALUE_ESCAPES_H\n"
-		"#define BITCOIN_UNIVALUE_UNIVALUE_ESCAPES_H\n"
+		"#ifndef AYCH_UNIVALUE_UNIVALUE_ESCAPES_H\n"
+		"#define AYCH_UNIVALUE_UNIVALUE_ESCAPES_H\n"
 		"static const char *escapes[256] = {\n");
 
 	for (unsigned int i = 0; i < 256; i++) {
@@ -72,7 +73,7 @@ static void outputEscape()
 	}
 
 	printf(	"};\n"
-		"#endif // BITCOIN_UNIVALUE_UNIVALUE_ESCAPES_H\n");
+		"#endif // AYCH_UNIVALUE_UNIVALUE_ESCAPES_H\n");
 }
 
 int main (int argc, char *argv[])
