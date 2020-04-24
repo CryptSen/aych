@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test various net timeouts.
 
-- Create three bitcoind nodes:
+- Create three aychd nodes:
 
     no_verack_node - we never send a verack in response to their version
     no_version_node - we never send a version (only a ping)
@@ -25,14 +27,14 @@ from time import sleep
 
 from test_framework.messages import msg_ping
 from test_framework.mininode import P2PInterface
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 
 class TestP2PConn(P2PInterface):
     def on_version(self, message):
         # Don't send a verack in response
         pass
 
-class TimeoutsTest(BitcoinTestFramework):
+class TimeoutsTest(AychTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
