@@ -124,7 +124,7 @@ def check_estimates(node, fees_seen):
         else:
             assert_greater_than_or_equal(i + 1, e["blocks"])
 
-class EstimateFeeTest(BitcoinTestFramework):
+class EstimateFeeTest(AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 3
 
