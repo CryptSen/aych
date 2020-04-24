@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test p2p mempool message.
 
 Test that nodes are disconnected if they send mempool messages when bloom
@@ -10,10 +12,10 @@ filters are not enabled.
 
 from test_framework.messages import msg_mempool
 from test_framework.mininode import P2PInterface
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import assert_equal
 
-class P2PMempoolTests(BitcoinTestFramework):
+class P2PMempoolTests(AychTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
