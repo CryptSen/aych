@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test various command line arguments and configuration file parameters."""
 
 import os
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 
 
-class ConfArgsTest(BitcoinTestFramework):
+class ConfArgsTest(AychTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
@@ -60,12 +62,12 @@ class ConfArgsTest(BitcoinTestFramework):
             f.write("datadir=" + new_data_dir + "\n")
             f.write(conf_file_contents)
 
-        # Temporarily disabled, because this test would access the user's home dir (~/.bitcoin)
+        # Temporarily disabled, because this test would access the user's home dir (~/.aych)
         #self.nodes[0].assert_start_raises_init_error(['-conf=' + conf_file], 'Error reading configuration file: specified data directory "' + new_data_dir + '" does not exist.')
 
         # Create the directory and ensure the config file now works
         os.mkdir(new_data_dir)
-        # Temporarily disabled, because this test would access the user's home dir (~/.bitcoin)
+        # Temporarily disabled, because this test would access the user's home dir (~/.aych)
         #self.start_node(0, ['-conf='+conf_file, '-wallet=w1'])
         #self.stop_node(0)
         #assert os.path.exists(os.path.join(new_data_dir, 'regtest', 'wallets', 'w1'))
