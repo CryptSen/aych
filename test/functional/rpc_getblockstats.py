@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
 
 #
 # Test getblockstats rpc call
 #
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import (
     assert_equal,
     assert_raises_rpc_error,
@@ -17,7 +18,7 @@ import time
 
 TESTSDIR = os.path.dirname(os.path.realpath(__file__))
 
-class GetblockstatsTest(BitcoinTestFramework):
+class GetblockstatsTest(AychTestFramework):
 
     start_height = 101
     max_stat_pos = 2
