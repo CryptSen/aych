@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test that the wallet can send and receive using all combinations of address types.
 
 There are 5 nodes-under-test:
@@ -53,7 +55,7 @@ Test that the nodes generate the correct change address type:
 from decimal import Decimal
 import itertools
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import (
     assert_equal,
     assert_greater_than,
@@ -64,7 +66,7 @@ from test_framework.util import (
 )
 
 
-class AddressTypeTest(BitcoinTestFramework):
+class AddressTypeTest(AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 6
         self.extra_args = [
