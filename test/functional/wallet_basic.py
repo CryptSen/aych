@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test the wallet."""
 from decimal import Decimal
 import time
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import (
     assert_array_result,
     assert_equal,
@@ -18,7 +20,7 @@ from test_framework.util import (
     wait_until,
 )
 
-class WalletTest(BitcoinTestFramework):
+class WalletTest(AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
         self.setup_clean_chain = True
@@ -82,7 +84,7 @@ class WalletTest(BitcoinTestFramework):
         txout = self.nodes[0].gettxout(txid=confirmed_txid, n=confirmed_index, include_mempool=True)
         assert_equal(txout['value'], 50)
 
-        # Send 21 BTC from 0 to 2 using sendtoaddress call.
+        # Send 21 AEX, AYCH from 0 to 2 using sendtoaddress call.
         # Locked memory should use at least 32 bytes to sign each transaction
         self.log.info("test getmemoryinfo")
         memory_before = self.nodes[0].getmemoryinfo()
@@ -191,7 +193,7 @@ class WalletTest(BitcoinTestFramework):
         node_2_bal = self.check_fee_amount(self.nodes[2].getbalance(), Decimal('84'), fee_per_byte, self.get_vsize(self.nodes[2].getrawtransaction(txid)))
         assert_equal(self.nodes[0].getbalance(), Decimal('10'))
 
-        # Send 10 BTC with subtract fee from amount
+        # Send 10 AEX, AYCH with subtract fee from amount
         txid = self.nodes[2].sendtoaddress(address, 10, "", "", True)
         self.nodes[2].generate(1)
         self.sync_all([self.nodes[0:3]])
@@ -199,7 +201,7 @@ class WalletTest(BitcoinTestFramework):
         assert_equal(self.nodes[2].getbalance(), node_2_bal)
         node_0_bal = self.check_fee_amount(self.nodes[0].getbalance(), Decimal('20'), fee_per_byte, self.get_vsize(self.nodes[2].getrawtransaction(txid)))
 
-        # Sendmany 10 BTC
+        # Sendmany 10 AEX, AYCH
         txid = self.nodes[2].sendmany('', {address: 10}, 0, "", [])
         self.nodes[2].generate(1)
         self.sync_all([self.nodes[0:3]])
@@ -207,7 +209,7 @@ class WalletTest(BitcoinTestFramework):
         node_2_bal = self.check_fee_amount(self.nodes[2].getbalance(), node_2_bal - Decimal('10'), fee_per_byte, self.get_vsize(self.nodes[2].getrawtransaction(txid)))
         assert_equal(self.nodes[0].getbalance(), node_0_bal)
 
-        # Sendmany 10 BTC with subtract fee from amount
+        # Sendmany 10 AEX, AYCH with subtract fee from amount
         txid = self.nodes[2].sendmany('', {address: 10}, 0, "", [address])
         self.nodes[2].generate(1)
         self.sync_all([self.nodes[0:3]])
@@ -386,7 +388,7 @@ class WalletTest(BitcoinTestFramework):
             '-reindex',
             '-zapwallettxes=1',
             '-zapwallettxes=2',
-            # disabled until issue is fixed: https://github.com/bitcoin/bitcoin/issues/7463
+            # disabled until issue is fixed: https://github.com/cryptsen/aych/issues/7463
             # '-salvagewallet',
         ]
         chainlimit = 6
