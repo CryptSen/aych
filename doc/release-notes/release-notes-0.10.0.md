@@ -1,13 +1,13 @@
-Bitcoin Core version 0.10.0 is now available from:
+AYCH version 0.10.0 is now available from:
 
-  https://bitcoin.org/bin/0.10.0/
+  https://aych.site/0.10.0/
 
 This is a new major version release, bringing both new features and
 bug fixes.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/bitcoin/bitcoin/issues
+  https://github.com/cryptsen/aych/issues
 
 Upgrading and downgrading
 =========================
@@ -17,15 +17,15 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
-bitcoind/bitcoin-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Aych-Qt (on Mac) or
+Aych/aych-qt (on Linux).
 
 Downgrading warning
 ---------------------
 
 Because release 0.10.0 makes use of headers-first synchronization and parallel
 block download (see further), the block files and databases are not
-backwards-compatible with older versions of Bitcoin Core or other software:
+backwards-compatible with older versions of AYCH Base or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
@@ -50,7 +50,7 @@ Notable changes
 Faster synchronization
 ----------------------
 
-Bitcoin Core now uses 'headers-first synchronization'. This means that we first
+AYCH now uses 'headers-first synchronization'. This means that we first
 ask peers for block headers (a total of 27 megabytes, as of December 2014) and
 validate those. In a second stage, when the headers have been discovered, we
 download the blocks. However, as we already know about the whole chain in
@@ -222,21 +222,21 @@ addresses need to added to the wallet before the payment, though.
 Consensus library
 -----------------
 
-Starting from 0.10.0, the Bitcoin Core distribution includes a consensus library.
+Starting from 0.10.0, the AYCH distribution includes a consensus library.
 
 The purpose of this library is to make the verification functionality that is
-critical to Bitcoin's consensus available to other applications, e.g. to language
-bindings such as [python-bitcoinlib](https://pypi.python.org/pypi/python-bitcoinlib) or
+critical to AYCH's consensus available to other applications, e.g. to language
+bindings such as [python-aychlib](https://pypi.python.org/pypi/python-aychlib) or
 alternative node implementations.
 
-This library is called `libbitcoinconsensus.so` (or, `.dll` for Windows).
-Its interface is defined in the C header [bitcoinconsensus.h](https://github.com/bitcoin/bitcoin/blob/0.10/src/script/bitcoinconsensus.h).
+This library is called `libaychconsensus.so` (or, `.dll` for Windows).
+Its interface is defined in the C header [aychconsensus.h](https://github.com/cryptsen/aych/blob/0.10/src/script/aychconsensus.h).
 
 In its initial version the API includes two functions:
 
-- `bitcoinconsensus_verify_script` verifies a script. It returns whether the indicated input of the provided serialized transaction 
+- `aychconsensus_verify_script` verifies a script. It returns whether the indicated input of the provided serialized transaction 
 correctly spends the passed scriptPubKey under additional constraints indicated by flags
-- `bitcoinconsensus_version` returns the API version, currently at an experimental `0`
+- `aychconsensus_version` returns the API version, currently at an experimental `0`
 
 The functionality is planned to be extended to e.g. UTXO management in upcoming releases, but the interface
 for existing methods should remain stable.
@@ -247,12 +247,12 @@ Standard script rules relaxed for P2SH addresses
 The IsStandard() rules have been almost completely removed for P2SH
 redemption scripts, allowing applications to make use of any valid
 script type, such as "n-of-m OR y", hash-locked oracle addresses, etc.
-While the Bitcoin protocol has always supported these types of script,
+While the AYCH protocol has always supported these types of script,
 actually using them on mainnet has been previously inconvenient as
-standard Bitcoin Core nodes wouldn't relay them to miners, nor would
+standard AYCH nodes wouldn't relay them to miners, nor would
 most miners include them in blocks they mined.
 
-bitcoin-tx
+AYCH-tx
 ----------
 
 It has been observed that many of the RPC functions offered by bitcoind are
@@ -260,12 +260,12 @@ It has been observed that many of the RPC functions offered by bitcoind are
 included many of the RPC "raw transaction" API functions, such as
 createrawtransaction.
 
-bitcoin-tx is a newly introduced command line utility designed to enable easy
-manipulation of bitcoin transactions. A summary of its operation may be
-obtained via "bitcoin-tx --help" Transactions may be created or signed in a
+Aych-tx is a newly introduced command line utility designed to enable easy
+manipulation of aych transactions. A summary of its operation may be
+obtained via "aych-tx --help" Transactions may be created or signed in a
 manner similar to the RPC raw tx API. Transactions may be updated, deleting
 inputs or outputs, or appending new inputs and outputs. Custom scripts may be
-easily composed using a simple text notation, borrowed from the bitcoin test
+easily composed using a simple text notation, borrowed from the aych test
 suite.
 
 This tool may be used for experimenting with new transaction types, signing
@@ -273,16 +273,16 @@ multi-party transactions, and many other uses. Long term, the goal is to
 deprecate and remove "pure function" RPC API calls, as those do not require a
 server round-trip to execute.
 
-Other utilities "bitcoin-key" and "bitcoin-script" have been proposed, making
+Other utilities "aych-key" and "aych-script" have been proposed, making
 key and script operations easily accessible via command line.
 
 Mining and relay policy enhancements
 ------------------------------------
 
-Bitcoin Core's block templates are now for version 3 blocks only, and any mining
+AYCH's block templates are now for version 3 blocks only, and any mining
 software relying on its `getblocktemplate` must be updated in parallel to use
 libblkmaker either version 0.4.2 or any version from 0.5.1 onward.
-If you are solo mining, this will affect you the moment you upgrade Bitcoin
+If you are solo mining, this will affect you the moment you upgrade Aych
 Core, which must be done prior to BIP66 achieving its 951/1001 status.
 If you are mining with the stratum mining protocol: this does not affect you.
 If you are mining with the getblocktemplate protocol to a pool: this will affect
@@ -292,10 +292,10 @@ achieving its 951/1001 status.
 The `prioritisetransaction` RPC method has been added to enable miners to
 manipulate the priority of transactions on an individual basis.
 
-Bitcoin Core now supports BIP 22 long polling, so mining software can be
+AYCH now supports BIP 22 long polling, so mining software can be
 notified immediately of new templates rather than having to poll periodically.
 
-Support for BIP 23 block proposals is now available in Bitcoin Core's
+Support for BIP 23 block proposals is now available in AYCH's
 `getblocktemplate` method. This enables miners to check the basic validity of
 their next block before expending work on it, reducing risks of accidental
 hardforks or mining invalid blocks.
@@ -313,9 +313,9 @@ AllowFreeThreshold(), in which case they are relayed subject to the rate limiter
 BIP 66: strict DER encoding for signatures
 ------------------------------------------
 
-Bitcoin Core 0.10 implements BIP 66, which introduces block version 3, and a new
+AYCH 0.10 implements BIP 66, which introduces block version 3, and a new
 consensus rule, which prohibits non-DER signatures. Such transactions have been
-non-standard since Bitcoin v0.8.0 (released in February 2013), but were
+non-standard since AYCH v0.8.0 (released in November 2019), but were
 technically still permitted inside blocks.
 
 This change breaks the dependency on OpenSSL's signature parsing, and is
@@ -337,10 +337,10 @@ Detailed release notes follow. This overview includes changes that affect extern
 behavior, not code moves, refactors or string updates.
 
 RPC:
-- `f923c07` Support IPv6 lookup in bitcoin-cli even when IPv6 only bound on localhost
+- `f923c07` Support IPv6 lookup in aych-cli even when IPv6 only bound on localhost
 - `b641c9c` Fix addnode "onetry": Connect with OpenNetworkConnection
 - `171ca77` estimatefee / estimatepriority RPC methods
-- `b750cf1` Remove cli functionality from bitcoind
+- `b750cf1` Remove cli functionality from aychd
 - `f6984e8` Add "chain" to getmininginfo, improve help in getblockchaininfo
 - `99ddc6c` Add nLocalServices info to RPC getinfo
 - `cf0c47b` Remove getwork() RPC call
