@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test the zapwallettxes functionality.
 
-- start two bitcoind nodes
+- start two aychd nodes
 - create two transactions on node 0 - one is confirmed and one is unconfirmed.
 - restart node 0 and verify that both the confirmed and the unconfirmed
   transactions are still available.
@@ -14,14 +16,14 @@
   transactions are still available, but that the unconfirmed transaction has
   been zapped.
 """
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import (
     assert_equal,
     assert_raises_rpc_error,
     wait_until,
 )
 
-class ZapWalletTXesTest (BitcoinTestFramework):
+class ZapWalletTXesTest (AychTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 2
