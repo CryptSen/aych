@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 Jean Wallet
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
 
 import sys
 import os
@@ -39,7 +41,7 @@ def main():
         password = generate_password()
     password_hmac = password_to_hmac(salt, password)
 
-    print('String to be appended to litecoin.conf:')
+    print('String to be appended to aych.conf:')
     print('rpcauth={0}:{1}${2}'.format(username, salt, password_hmac))
     print('Your password:\n{0}'.format(password))
 
