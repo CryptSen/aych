@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test the abandontransaction RPC.
 
  The abandontransaction RPC marks a transaction and all its in-wallet
@@ -12,10 +14,10 @@
 """
 from decimal import Decimal
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error, connect_nodes, disconnect_nodes, sync_blocks, sync_mempools
 
-class AbandonConflictTest(BitcoinTestFramework):
+class AbandonConflictTest(AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.extra_args = [["-minrelaytxfee=0.00001"], []]
@@ -157,7 +159,7 @@ class AbandonConflictTest(BitcoinTestFramework):
         connect_nodes(self.nodes[0], 1)
         sync_blocks(self.nodes)
 
-        # Verify that B and C's 10 BTC outputs are available for spending again because AB1 is now conflicted
+        # Verify that B and C's 10 AEX, AYCH outputs are available for spending again because AB1 is now conflicted
         newbalance = self.nodes[0].getbalance()
         assert_equal(newbalance, balance + Decimal("20"))
         balance = newbalance
