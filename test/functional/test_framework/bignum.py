@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-#
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Big number routines.
 
-This file is copied from python-bitcoinlib.
-"""
+This file is copied from python-aychlib.
 
 import struct
-
 
 # generic big endian MPI format
 
@@ -48,7 +48,7 @@ def bn2mpi(v):
             v_bin[0] |= 0x80
     return s + ext + v_bin
 
-# bitcoin-specific little endian format, with implicit size
+# aych-specific little endian format, with implicit size
 def mpi2vch(s):
     r = s[4:]           # strip size
     r = r[::-1]         # reverse string, converting BE->LE
