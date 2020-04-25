@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-# Copyright (c) 2010 ArtForz -- public domain half-a-node
-# Copyright (c) 2012 Jeff Garzik
-# Copyright (c) 2010-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 Jean Wallet
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Litecoin P2P network half-a-node.
 
 This python code was modified from ArtForz' public domain half-a-node, as
@@ -87,7 +88,7 @@ class P2PConnection(asyncio.Protocol):
         self.on_connection_send_msg = None
         self.recvbuf = b""
         self.network = net
-        logger.debug('Connecting to Litecoin Node: %s:%d' % (self.dstaddr, self.dstport))
+        logger.debug('Connecting to Aych Node: %s:%d' % (self.dstaddr, self.dstport))
 
         loop = NetworkThread.network_event_loop
         conn_gen_unsafe = loop.create_connection(lambda: self, host=self.dstaddr, port=self.dstport)
