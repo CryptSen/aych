@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test the listtransactions API."""
 from decimal import Decimal
 from io import BytesIO
 
 from test_framework.messages import COIN, CTransaction
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import (
     assert_array_result,
     assert_equal,
@@ -22,7 +24,7 @@ def tx_from_hex(hexstring):
     tx.deserialize(f)
     return tx
 
-class ListTransactionsTest(BitcoinTestFramework):
+class ListTransactionsTest(AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.enable_mocktime()
@@ -102,7 +104,7 @@ class ListTransactionsTest(BitcoinTestFramework):
                             {"category": "receive", "amount": Decimal("0.1")},
                             {"txid": txid, "label": "watchonly"})
 
-        # Litecoin has RBF disabled
+        # Aych has RBF disabled
         # self.run_rbf_opt_in_test()
 
     # Check that the opt-in-rbf flag works properly, for sent and received
