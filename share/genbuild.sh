@@ -1,7 +1,9 @@
 #!/bin/sh
-# Copyright (c) 2012-2016 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 Jean Wallet
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
 
 export LC_ALL=C
 if [ $# -gt 1 ]; then
@@ -24,7 +26,7 @@ git_check_in_repo() {
 
 DESC=""
 SUFFIX=""
-if [ "${BITCOIN_GENBUILD_NO_GIT}" != "1" -a -e "$(which git 2>/dev/null)" -a "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ] && git_check_in_repo share/genbuild.sh; then
+if [ "${AYCH_GENBUILD_NO_GIT}" != "1" -a -e "$(which git 2>/dev/null)" -a "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ] && git_check_in_repo share/genbuild.sh; then
     # clean 'dirty' status of touched files that haven't been modified
     git diff >/dev/null 2>/dev/null 
 
