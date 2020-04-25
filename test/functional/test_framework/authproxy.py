@@ -1,8 +1,5 @@
-# Copyright (c) 2011 Jeff Garzik
-#
-# Previous copyright, from python-jsonrpc/jsonrpc/proxy.py:
-#
-# Copyright (c) 2007 Jan-Klaas Kollhof
+# Copyright (c) 2015 - 2020 Jean Wallet (Python-jsonrpc/jsonrpc/proxy.py)
+# Copyright (c) 2020 The AYCHDeveloper
 #
 # This file is part of jsonrpc.
 #
