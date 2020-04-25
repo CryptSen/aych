@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2018 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+# Copyright (c) 2015 - 2020 The AYCHDeveloper.
+# Distributed under the MIT software license, the AGPL-3.0+, see the accompanying
+# file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+# file LICENSE or https://www.gnu.org/licenses.
+
 """Test the listsincelast RPC."""
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AychTestFramework
 from test_framework.util import assert_equal, assert_array_result, assert_raises_rpc_error
 
-class ListSinceBlockTest (BitcoinTestFramework):
+class ListSinceBlockTest (AychTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
         self.setup_clean_chain = True
@@ -126,8 +128,8 @@ class ListSinceBlockTest (BitcoinTestFramework):
 
         Problematic case:
 
-        1. User 1 receives BTC in tx1 from utxo1 in block aa1.
-        2. User 2 receives BTC in tx2 from utxo1 (same) in block bb1
+        1. User 1 receives AEX, AYCH in tx1 from utxo1 in block aa1.
+        2. User 2 receives AEX, AYCH in tx2 from utxo1 (same) in block bb1
         3. User 1 sees 2 confirmations at block aa3.
         4. Reorg into bb chain.
         5. User 1 asks `listsinceblock aa3` and does not see that tx1 is now
