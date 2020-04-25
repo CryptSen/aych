@@ -32,7 +32,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "Bitcoin Core"
+PROJECT_NAME           = "AYCH"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -51,7 +51,7 @@ PROJECT_BRIEF          = "P2P Digital Currency"
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = doc/bitcoin_logo_doxygen.png
+PROJECT_LOGO           = doc/aych_logo_doxygen.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
@@ -708,7 +708,7 @@ LAYOUT_FILE            =
 # The CITE_BIB_FILES tag can be used to specify one or more bib files containing
 # the reference definitions. This must be a list of .bib files. The .bib
 # extension is automatically appended if omitted. This requires the bibtex tool
-# to be installed. See also http://en.wikipedia.org/wiki/BibTeX for more info.
+# to be installed. See also http://en.wikipedia.org/wiki/BibTeUK  for more info.
 # For LaTeX the style of the bibliography can be controlled using
 # LATEX_BIB_STYLE. To use this feature you need bibtex and perl available in the
 # search path. See also \cite for info how to create references.
